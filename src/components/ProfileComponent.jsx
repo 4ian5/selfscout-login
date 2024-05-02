@@ -3,10 +3,10 @@ import ProfileCard from "./common/ProfileCard";
 import ProfileEdit from "./common/ProfileEdit";
 
 export default function ProfileComponent({ currentUser }) {
-  const [isEdit, setisEdit] = useState(false);
+  const [isEdit, setIsEdit] = useState(false);
 
   const onEdit = () => {
-    setisEdit(!isEdit);
+    setIsEdit(!isEdit);
   };
   return (
     <div>

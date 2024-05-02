@@ -31,7 +31,7 @@ export default function ProfileEdit({ onEdit, currentUser }) {
           name="name"
           value={editInputs.name}
         />
-        <label>Headline</label>
+        <label>Coach or Athlete</label>
         <input
           onChange={getInput}
           className="common-input"
@@ -39,7 +39,7 @@ export default function ProfileEdit({ onEdit, currentUser }) {
           value={editInputs.headline}
           name="headline"
         />
-        <label>Country</label>
+        <label>State</label>
         <input
           onChange={getInput}
           className="common-input"
@@ -55,7 +55,7 @@ export default function ProfileEdit({ onEdit, currentUser }) {
           name="city"
           value={editInputs.city}
         />
-        <label>Company</label>
+        <label>High School</label>
         <input
           onChange={getInput}
           className="common-input"
@@ -63,7 +63,7 @@ export default function ProfileEdit({ onEdit, currentUser }) {
           value={editInputs.company}
           name="company"
         />
-        <label>Industry </label>
+        <label>Sport</label>
         <input
           onChange={getInput}
           className="common-input"
@@ -79,7 +79,7 @@ export default function ProfileEdit({ onEdit, currentUser }) {
           name="college"
           value={editInputs.college}
         />
-        <label>Website</label>
+        <label>Link</label>
         <input
           onChange={getInput}
           className="common-input"

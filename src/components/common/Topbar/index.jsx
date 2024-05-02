@@ -1,6 +1,4 @@
 import React, { useEffect, useState } from "react";
-import LinkedinLogo from "../../../assets/linkedinLogo.png";
-import user from "../../../assets/user.png";
 import SearchUsers from "../SearchUsers";
 import {
   AiOutlineHome,
@@ -10,7 +8,6 @@ import {
   AiOutlineBell,
 } from "react-icons/ai";
 import { useNavigate } from "react-router-dom";
-import { BsBriefcase } from "react-icons/bs";
 import { getAllUsers } from "../../../api/FirestoreAPI";
 import ProfilePopup from "../ProfilePopup";
 import "./index.scss";
@@ -75,7 +72,6 @@ export default function Topbar({ currentUser }) {
         <></>
       )}
 
-      <img className="linkedin-logo" src={LinkedinLogo} alt="LinkedinLogo" />
       {isSearch ? (
         <SearchUsers
           setIsSearch={setIsSearch}
@@ -98,7 +94,6 @@ export default function Topbar({ currentUser }) {
             className="react-icon"
             onClick={() => goToRoute("/connections")}
           />
-          <BsBriefcase size={30} className="react-icon" />
           <AiOutlineMessage size={30} className="react-icon" />
           <AiOutlineBell size={30} className="react-icon" />
         </div>
